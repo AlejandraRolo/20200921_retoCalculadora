@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Calculadora</title>
+    <meta name="authors" content="Yazmín Alejandra Rodriguez">
+  
+    <link rel="styleSheet" href="./assets/css/bootstrap_4.5.2.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="styleSheet" href="./assets/css/index.css" type="text/css">
+</head>
+
+<body>
+    
+    <main>
+        <div class="container rounded my-1 p-3">
+            <div class="row justify-content-center p-5 border-container bg-row">
+                <div class="col-lg-6 col-md-12 col-sm-6 d-flex flex-column mb-2">
+                    <h3 class="text-left mb-4 pb-2">Estándar</h3>
+                    <form>
+                        <div class="form-row d-caja">
+                            <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                                <p id="cajaDisplay" class="text-right"></p>
+                                <input id="cajaNumeros" type="number" class="form-control" placeholder=0 readonly>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="botones" class="container boton-calc">
+                        <div class="row">
+                            <div class="col-3 text-center"><button>%</button></div>
+                            <div class="col-3 text-center"><button>CE</button></div>
+                            <div class="col-3 text-center"><button>C</button></div>
+                            <div class="col-3 text-center"><button><--</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 text-center"><button>1/X</button></div>
+                            <div class="col-3 text-center"><button>X^2</button></div>
+                            <div class="col-3 text-center"><button>ƴx</button></div>
+                            <div class="col-3 text-center"><button>/</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 text-center"><button>7</button></div>
+                            <div class="col-3 text-center"><button>8</button></div>
+                            <div class="col-3 text-center"><button>9</button></div>
+                            <div class="col-3 text-center"><button>*</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 text-center"><button>4</button></div>
+                            <div class="col-3 text-center"><button>5</button></div>
+                            <div class="col-3 text-center"><button>6</button></div>
+                            <div class="col-3 text-center"><button>-</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 text-center"><button>1</button></div>
+                            <div class="col-3 text-center"><button>2</button></div>
+                            <div class="col-3 text-center"><button>3</button></div>
+                            <div class="col-3 text-center"><button>+</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 text-center"><button>±</button></div>
+                            <div class="col-3 text-center"><button>0</button></div>
+                            <div class="col-3 text-center"><button>,</button></div>
+                            <div class="col-3 text-center"><button>=</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-6 align-self-start">
+                    <button id="btnHistorial" class="border-inferior btn btn-light" >Historial</button>
+                    <button id="btnHistorialSetet" class="border-inferior btn btn-light" >Borrar</button>
+                    <ul id="lstHistorial" class="mt-2"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/js/jquery_3.5.1.min.js"></script>  <!--Va primero Jquery-->
+    <script src="./assets/js/popper_1.16.1.min.js"></script>
+    <script src="./assets/js/bootstrap_4.5.2.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./assets/js/index.js"></script> <!--Conectamos la hoja de js-->
+</body>
+</html>
